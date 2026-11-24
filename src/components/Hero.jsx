@@ -19,7 +19,7 @@ function Hero() {
         <p>
           Discover delicious flavors made with fresh
           ingredients. Enjoy memorable meals with
-          family and friends at Foodora.
+          family and friends at FoodAura
         </p>
 
         <div className="hero-buttons">
@@ -34,7 +34,7 @@ function Hero() {
 
         <div className="hero-info">
           <div>
-            <h3>4.9/5</h3>
+            <h3>4.5/5</h3>
             <span>Customer Rating</span>
           </div>
 
