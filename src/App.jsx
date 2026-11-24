@@ -11,9 +11,9 @@ import Reservation from "./components/Reservation";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-import Login from "./components/login.jsx";
 import Cart from "./components/Cart.jsx";
 import Checkout from "./components/Checkout.jsx";
+import Login from "./components/Login.jsx";
 
 import "./App.css";
 
