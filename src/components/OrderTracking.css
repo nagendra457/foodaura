@@ -1,0 +1,174 @@
+
+.tracking-section {
+  padding: 85px 7%;
+  background: #f8f8f3;
+  min-height: 100vh;
+}
+
+.tracking-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.tracking-heading span {
+  color: #e58b35;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.tracking-heading h1 {
+  color: #173d2b;
+  font-size: 38px;
+  margin: 12px 0;
+}
+
+.tracking-heading p {
+  color: #777;
+}
+
+.tracking-card {
+  max-width: 850px;
+  margin: auto;
+  padding: 35px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.tracking-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.tracking-top p,
+.delivery-time span {
+  color: #888;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.tracking-top h3,
+.delivery-time h2 {
+  color: #173d2b;
+  margin-top: 8px;
+}
+
+.tracking-progress {
+  padding: 35px 0;
+}
+
+.tracking-step {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  padding-bottom: 35px;
+  opacity: 0.45;
+}
+
+.tracking-step:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 45px;
+  width: 2px;
+  height: calc(100% - 35px);
+  background: #ddd;
+}
+
+.tracking-step.completed {
+  opacity: 1;
+}
+
+.tracking-step.completed:not(:last-child)::before {
+  background: #173d2b;
+}
+
+.step-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: #eee;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.completed .step-icon {
+  background: #173d2b;
+  color: white;
+}
+
+.step-content h3 {
+  color: #173d2b;
+  margin: 5px 0;
+}
+
+.step-content p {
+  color: #888;
+  font-size: 14px;
+}
+
+.tracking-demo {
+  background: #f8f8f3;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.tracking-demo > p {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.tracking-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.tracking-buttons button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #173d2b;
+  border-radius: 50%;
+  background: white;
+  color: #173d2b;
+  cursor: pointer;
+}
+
+.tracking-buttons button.active {
+  background: #173d2b;
+  color: white;
+}
+
+.tracking-demo h3 {
+  color: #173d2b;
+}
+
+@media (max-width: 600px) {
+  .tracking-section {
+    padding: 55px 5%;
+  }
+
+  .tracking-heading h1 {
+    font-size: 29px;
+  }
+
+  .tracking-card {
+    padding: 22px 17px;
+  }
+
+  .tracking-top {
+    flex-direction: column;
+  }
+
+  .tracking-step {
+    gap: 14px;
+  }
+}

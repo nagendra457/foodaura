@@ -1,0 +1,139 @@
+
+.login-section {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #f8f8f3;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+}
+
+.login-brand {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.login-brand h1 {
+  color: #173d2b;
+  font-size: 32px;
+}
+
+.login-brand h1 span {
+  color: #e58b35;
+}
+
+.login-brand p {
+  color: #888;
+  font-size: 13px;
+}
+
+.login-heading h2 {
+  color: #173d2b;
+  margin-bottom: 8px;
+}
+
+.login-heading p {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-card form > input,
+.password-field input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-card input:focus {
+  border-color: #e58b35;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 65px;
+}
+
+.password-field button {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  color: #173d2b;
+  cursor: pointer;
+}
+
+.login-submit {
+  padding: 15px;
+  background: #173d2b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-submit:hover {
+  background: #e58b35;
+}
+
+.login-message {
+  margin-top: 18px;
+  color: #173d2b;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-switch {
+  margin-top: 25px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.login-switch button {
+  margin-left: 6px;
+  border: none;
+  background: none;
+  color: #e58b35;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 28px 20px;
+  }
+}
+.login-button {
+  text-decoration: none;
+  background: #173d2b;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+}
